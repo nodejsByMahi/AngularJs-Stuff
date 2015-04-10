@@ -1,0 +1,81 @@
+.mainContainer{
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    width:20em;
+    height:inherit;
+    margin-top: -9em; /*set to a negative number 1/2 of your height*/
+    margin-left: -15em; /*set to a negative number 1/2 of your width*/
+    border: 1px solid #ccc;
+    background-color: #f3f3f3;
+}
+
+.regForm{
+    margin-top: 15px!important;
+    top: 0%!important;
+}
+
+.formContent{
+    margin-bottom: 15px;
+    padding-left: 50px;
+}
+
+.formLabel{
+    display: inline-block;
+    position: relative;
+    min-height: 1px;
+}
+
+.inputField{
+    display: table-row-group;
+    padding-left: 20px;
+    margin:auto;
+}
+
+.contentOfModal{
+    padding: 50px;
+    margin: 25px;
+    background: white;
+    position:relative;
+    top:25%;
+    bottom:50%;
+    width: 30em;
+    left: 270px;
+}
+
+.modalBox{
+    z-index: 10;
+    display: block;
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.closeBtn{
+    padding: 19px 20px 20px;
+    margin-top: 15px;
+    text-align: right;
+    border-top: 1px solid #e5e5e5;
+}
+
+.profileTxt div{
+    margin-bottom: 10px;
+}
+
+.closeCornerBtn{
+    height: 20px;
+    width: 20px;
+    margin-top: -47px;
+    margin-right: -46px
+}
+
+.smallDialog{
+    height: 240px;
+}
+
+.largeDialog{
+    height: 305px;
+}

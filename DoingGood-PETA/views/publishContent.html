@@ -1,0 +1,32 @@
+<!-- Date time picker -->
+<div class="dropdown">
+    <a class="dropdown-toggle my-toggle-select" id="dLabel" role="button" data-toggle="dropdown" data-target="#" href="">
+        <div class="input-append"><input type="text" placeholder="From date" class="input-large" data-ng-model="date.FromDate"><span class="add-on"><i
+                class="glyphicon glyphicon-calendar"></i></span>
+        </div>
+    </a>
+    <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+        <datetimepicker data-ng-model="date.FromDate"
+                        data-datetimepicker-config="{ dropdownSelector: '.my-toggle-select' }"></datetimepicker>
+    </ul>
+</div>
+
+<br/>
+
+<!-- Date time picker -->
+<div class="dropdown">
+    <a class="dropdown-toggle my-toggle-select" id="dLabel" role="button" data-toggle="dropdown" data-target="#" href="">
+        <div class="input-append"><input type="text" placeholder="To date" class="input-large" data-ng-model="date.toDate"><span class="add-on"><i
+                class="glyphicon glyphicon-calendar"></i></span>
+        </div>
+    </a>
+    <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+        <datetimepicker data-ng-model="date.toDate"
+                        data-datetimepicker-config="{ dropdownSelector: '.my-toggle-select' }"></datetimepicker>
+    </ul>
+</div>
+
+<br/>
+<div>
+    From date: {{date.FromDate}}   To: {{date.toDate}}
+</div>

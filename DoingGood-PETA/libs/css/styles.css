@@ -1,0 +1,166 @@
+/*BASE SETTINGS*/
+
+body{
+    background-color:  white;
+    font-family:Verdana,Geneva,sans-serif;  
+    font-size:100%; 
+}
+
+a{
+    text-decoration:none; 
+}
+
+.clear{
+    clear:both;
+}
+
+/*FLOATS*/
+.float-right{
+    float:right; 
+}
+
+.float-left{
+    float:left; 
+}
+
+/*PADDING SETTINGS*/
+
+.nopadding {
+   padding-right: 0 !important;
+   padding-left:0 !important;
+   }
+
+
+/*TESTING*/
+.box{
+    border:1px solid yellow; 
+}
+
+/*WIDTH SETTINGS*/
+
+.log-out-area{
+    max-width:100%;
+    min-width:100%;
+    width:100%;
+
+}
+
+.main-area{
+    max-width:100%;
+    min-width:100%;
+    width:100%;
+    padding: 90px;
+}
+
+
+.left-side-container {
+    min-width:100%;
+    max-width:100%;
+    width:100%;   
+
+}
+
+
+.left-side-container img {
+    max-width:100%;
+
+}
+
+/*HEIGHT SETTINGS*/
+.right-side-container{
+    min-height:100%;
+     
+}
+
+.left-side-container {
+    min-height:100vh;
+    
+
+}
+
+.main-area{
+    min-height:92vh; 
+}
+
+
+
+
+
+/*TOP BAR*/
+.log-out-area {
+    background-color: #333333;
+    display:inline-block; 
+    
+  
+}
+
+.userAction{
+    padding:10px 10px 10px 0; 
+
+}
+ 
+.username{
+    padding-right:10px;
+    padding-top:8px;  
+    color:#f9f9f9;
+}
+
+
+
+/*NAVIGATION PANEL*/
+.left-side-container {
+    position:relative; 
+    background-color: #333333;
+    float: left;
+    display: inline-block;
+    
+}
+
+nav{
+    color:white; 
+}
+
+nav ul li{
+    display:block;
+    max-width:100%;
+    min-width:100%;
+    padding:8%;
+    font-weight:lighter; 
+
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:white;  
+}
+
+nav ul li:hover{
+    background-color:#cccccc;
+
+}
+
+nav ul li:hover a{
+    text-decoration:none; 
+    color:#f9f9f9;
+}
+
+
+
+/*MAIN CONTENT AREA*/
+.right-side-container{
+    
+    
+    display: inline-block;
+}
+
+.main-area {
+    background-color: #f9f9f9;
+    
+}
+
+.mian-area p{
+    color:white; 
+
+}
+
+

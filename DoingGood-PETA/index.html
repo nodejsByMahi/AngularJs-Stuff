@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html ng-app="tnyApp">
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>DoingGood-PETA</title>
+
+    <!-- Angular js libraries-->
+    <script type="text/javascript" src="libs/angularjs/angular.js"></script>
+    <script type="text/javascript" src="libs/angularjs/angular-ui-router.js"></script>
+    <script src="node_modules/angular-cookies/angular-cookies.js"></script>
+
+    <script src="libs/date-time-picker/src/js/moment.js"></script>
+    <script type="text/javascript" src="libs/date-time-picker/src/js/datetimepicker.js"></script>
+    <script src="libs/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="libs/js/bootstrap.js"></script>
+
+    <!-- app file for define module and routing  -->
+    <script type="text/javascript" src="app.js"></script>
+
+    <!--controllers -->
+    <script type="text/javascript" src="controllers/categoryCtrl.js"></script>
+    <script type="text/javascript" src="controllers/loginCtrl.js"></script>
+    <script type="text/javascript" src="controllers/dashboardCtrl.js"></script>
+    <script type="text/javascript" src="controllers/publishContentCtrl.js"></script>
+    <script type="text/javascript" src="controllers/sponsorsCtrl.js"></script>
+    <script type="text/javascript" src="controllers/contentCtrl.js"></script>
+
+    <!-- services -->
+    <script type="text/javascript" src="services/allCategoryService.js"></script>
+
+    <!-- CSS file  -->
+    <!-- <link rel="stylesheet" href="libs/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="libs/css/main.css">
+    <link rel="stylesheet" href="libs/css/reset.css">
+    <link rel="stylesheet" href="libs/css/styles.css">
+    <link href='http://fonts.googleapis.com/css?family=Comfortaa' rel='stylesheet' type='text/css'>
+    <link href="libs/css/style.css"  rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="libs/date-time-picker/src/css/datetimepicker.css"/>
+
+</head>
+<body>
+     <div ui-view></div>
+</body>
+</html>

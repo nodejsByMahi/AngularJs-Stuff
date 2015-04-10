@@ -1,0 +1,8 @@
+[
+       {"id":1, "name": "Latest"},
+       { "id":2, "name": "TV & Display"},
+       { "id":3, "name": "Smartphone"},
+       { "id":4, "name": "Tablets"},
+       { "id":5, "name": "Home Audio"},
+       { "id":6, "name": "Professional Audio"}
+]

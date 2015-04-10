@@ -1,0 +1,39 @@
+
+    <div class="container-fluid ">
+
+        <div class="row main ">
+
+            <div class="col-md-2 nopadding ">
+                <div class="left-side-container ">
+                <img src="images/peta.jpg">    
+                <nav>
+                <ul>
+                    <a ui-sref="/dashboard.publishContent"><li>PUBLISHED CONTENT</li></a>
+                    <a ui-sref="/dashboard.category"><li>CATEGORIES</li></a>
+                    <a ui-sref="/dashboard.content"><li>CONTENT</li></a>
+                    <a ui-sref="/dashboard.sponsors"><li>SPONSOR</li></a>
+                </ul>
+                </nav>
+                </div><!-- Nav container ends here -->
+            </div><!-- Left side nav column ends here -->
+
+            <div class="col-md-10 nopadding float-left">
+               <div class="log-out-area float-left "> 
+                    <div class="userAction float-right">
+                    <div class="username float-left ">{{loginUserSession}}</div>
+                    <div class="logout-button float-left"><button type="button" class="btn btn-primary  " ng-click="logOutUser()">Logout</button></div>
+
+                    </div><!-- Username and button container ends here -->
+                </div><!-- Logout area ends here -->
+
+                <div class="main-area float-left">
+                    <div ui-view></div>
+                    
+                </div>
+                <div class="clear"></div>
+            </div><!-- Top-bar area ends here -->
+        
+
+             </div><!-- Main row main ends here -->
+            
+        </div><!-- Main-container ends here -->

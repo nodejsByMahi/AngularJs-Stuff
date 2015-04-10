@@ -1,0 +1,56 @@
+
+
+<div>
+     <!-- Display add new category form -->
+    <input type="button" class="btn" ng-click="addNewCategory()" value=" Add New Category "/>
+
+    <div class="modalBox" ng-show="openModal">
+        <div class="contentOfModal smallDialog">
+            <h3>{{modalName}} category</h3>
+            <input type="text" placeholder="Enter Name" ng-model="category.name"/> <br/>
+            <input type="text" placeholder="Enter position" ng-model="position"/><br/>
+            <div class="closeBtn">
+                <button type="button" class="btn btn-primary" ng-click="cancelAddCategory()">Cancel</button>
+                <button type="button" class="btn btn-default" ng-click="submitAddNewCategory()">{{modalName}}</button>
+            </div>
+        </div>
+    </div>
+   
+<br/>
+    <div>
+        <table class="table">
+            <thead>
+                <th> Position </th>
+                <th> Name </th>
+                <th></th>
+                <th></th>
+                <th></th>
+            </thead>
+           <tr ng-repeat=" category in categoryList track by $index">
+                <td>{{$index}}</td>
+                <td> {{category.name}}</td>
+                <td colspan="2">
+                    <button class="btn" ng-click="editCategory($index, category)">
+                        <span class="glyphicon glyphicon-pencil"></span>
+                    </button>
+                </td>
+                <td>
+                    <button class="btn" ng-click="deleteCategory(category)">
+                        <span class="glyphicon glyphicon-trash"></span>
+                    </button>
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+<div class="modalBox" ng-show="openDeleteConfirmDialog">
+    <div class="contentOfModal smallDialog">
+        <h3>Are you sure you want to delete this category?</h3>
+
+        <div class="closeBtn">
+            <button type="button" class="btn btn-primary" ng-click="cancelDelete()">Cancel</button>
+            <button type="button" class="btn btn-default" ng-click="proceedToDelete()">Delete</button>
+        </div>
+    </div>
+</div>
